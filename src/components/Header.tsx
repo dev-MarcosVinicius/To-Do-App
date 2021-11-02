@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 
 export function Header({ tasksCounter }: HeaderProps) {
-  const tasksCounterText = tasksCounter > 1 ? 'Tarefas' : 'Tarefa';
+  const tasksCounterText = tasksCounter == 1 ? 'Tarefa' : 'Tarefas';
   
   return (
     <View style={styles.container}>
